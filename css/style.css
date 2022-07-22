@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+section {
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #0F1111;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+aside .aside_img a, aside .Sell a, aside .section .More, aside .section {
+  border: 1px solid rgba(121, 121, 121, 0.884);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.product p {
+  font-size: 14px;
+  color: #565959;
+}
+
+.basic_information .section_4 .first-a, .basic_information .section_3 .first-a, .basic_information .section_2 .first-a, .basic_information .section_1 .first-a {
+  color: #007185;
+  display: inline-block;
+}
+.basic_information .section_4 .first-a:hover, .basic_information .section_3 .first-a:hover, .basic_information .section_2 .first-a:hover, .basic_information .section_1 .first-a:hover {
+  color: #B12704;
+  text-decoration: underline;
+}
+
+aside .section .Line, .basic_information .section_4 .Line, .basic_information .section_2 .Line, .basic_information .section_1 .Line {
+  border-bottom: 1px solid rgba(121, 121, 121, 0.884);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.basic_information .section_2 div .button_type_tree, .basic_information .section_2 div .button_type_two, .basic_information .section_2 div .button_type_one {
+  margin: 10px 10px 10px 0;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+}
+
+.basic_information .section_1 .wings_symbol, .basic_information .section_4 .first-a, .basic_information .section_3 .first-a, .basic_information .section_2 .first-a, .basic_information .section_1 .first-a {
+  text-decoration: none;
+  display: block;
+}
+
+aside .Sell a, aside .section .More {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  width: 1465px;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.product {
+  position: fixed;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 23%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.product picture:first-child img {
+  width: 100%;
+}
+.product p {
+  margin: 10px auto;
+  font-size: 14px;
+}
+.product div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.product div picture {
+  width: 24%;
+  padding: 0;
+}
+.product div picture:hover {
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px rgb(74, 172, 218);
+  outline: 7px solid rgb(255, 255, 255);
+  outline-offset: -7px;
+  border-top: 2px solid rgb(30, 43, 161);
+  border-bottom: 2px solid rgb(30, 43, 161);
+  border-left: 2px solid rgb(30, 43, 161);
+  border-right: 2px solid rgb(30, 43, 161);
+}
+.product div picture img {
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+}
+.product .li-mark-1 {
+  margin-left: 20px;
+}
+
+.basic_information {
+  width: 57%;
+  display: flex;
+  right: 23%;
+  flex-wrap: wrap;
+  margin-left: 31%;
+}
+.basic_information .section_1 {
+  width: 100%;
+}
+.basic_information .section_1 span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.basic_information .section_1 .star_block {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.basic_information .section_1 .star_block #selecttheme {
+  border: none;
+  width: 20px;
+}
+.basic_information .section_1 .emblem {
+  margin-top: 10px;
+}
+.basic_information .section_1 .emblem span {
+  margin: 0;
+}
+.basic_information .section_1 .emblem span:first-child {
+  background-color: #232F3E;
+  color: #fff;
+  padding: 5px;
+}
+.basic_information .section_1 .emblem span:nth-child(2) {
+  background-color: #232F3E;
+  color: rgb(202, 108, 1);
+  padding: 5px;
+  position: relative;
+}
+.basic_information .section_1 .emblem span:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  border: 13px solid transparent;
+  border-left: 13px solid #232F3E;
+  border-top: 13px solid #232F3E;
+  top: 0px;
+  right: -26px;
+}
+.basic_information .section_1 .emblem span:last-child {
+  padding-left: 30px;
+}
+.basic_information .section_1 .wings_symbol {
+  margin-top: 20px;
+}
+.basic_information .section_1 .wings_symbol picture img {
+  width: 20px;
+}
+.basic_information .section_1 .wings_symbol span {
+  color: #168342;
+}
+.basic_information .section_2 {
+  width: 100%;
+}
+.basic_information .section_2 div {
+  display: flex;
+}
+.basic_information .section_2 div .button_type_one {
+  opacity: 0.33;
+  border: 1px dashed rgb(0, 0, 0);
+}
+.basic_information .section_2 div .button_type_one:hover {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  border: 1px dashed rgba(0, 0, 0, 0.33);
+}
+.basic_information .section_2 div .button_type_two {
+  border: 1px solid rgb(202, 108, 1);
+  background-color: #fefcf8;
+}
+.basic_information .section_2 div .button_type_tree {
+  border: 1px solid rgb(0, 0, 0);
+}
+.basic_information .section_2 div .button_type_tree:hover {
+  background-color: rgba(212, 212, 212, 0.89);
+}
+.basic_information .section_2 table {
+  margin-left: -15px;
+  border-spacing: 15px;
+}
+.basic_information .section_3 {
+  width: 100%;
+}
+.basic_information .section_3 ul {
+  margin-left: 20px;
+}
+.basic_information .section_4 .first-a span {
+  color: #B12704;
+}
+.basic_information .section_4 div {
+  display: flex;
+}
+.basic_information .section_4 div img {
+  width: 200px;
+}
+.basic_information .section_4 div .keyboard {
+  display: block;
+  margin-left: 20px;
+}
+.basic_information .section_4 div .keyboard p {
+  color: #B12704;
+}
+.basic_information .section_4 div .keyboard div {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.basic_information .section_4 div .keyboard div img {
+  height: 20px;
+  width: auto;
+}
+.basic_information .section_4 p {
+  margin-top: 10px;
+}
+
+aside {
+  width: 20%;
+  text-align: center;
+}
+aside .section {
+  width: 100%;
+}
+aside .section .Location {
+  display: flex;
+  text-decoration: none;
+  color: #639197;
+}
+aside .section .Location:hover {
+  color: #B12704;
+}
+aside .section .Location picture img {
+  width: 15px;
+  height: 15px;
+}
+aside .section .Location p {
+  font-size: 12px;
+  padding-left: 10px;
+}
+aside .section .More {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 70px;
+  margin: auto;
+  background-color: #fff;
+  font-size: 13px;
+  display: block;
+}
+aside .section .More:hover {
+  background-color: rgba(212, 212, 212, 0.89);
+}
+aside .section .More-add {
+  background-color: #eff0f4;
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+aside .Sell {
+  margin-bottom: 50px;
+}
+aside .Sell p {
+  margin: 50px auto 15px auto;
+  font-size: 12px;
+}
+aside .Sell a {
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 13px;
+}
+aside .Sell a:hover {
+  background-color: rgba(212, 212, 212, 0.89);
+}
+aside .aside_img a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 0;
+  width: 100%;
+}
+aside .aside_img a picture img {
+  width: 250px;
+}
+aside .aside_img a p {
+  text-align: left;
+}
+aside .aside_img a div {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

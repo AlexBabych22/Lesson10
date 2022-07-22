@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+section {
+    margin-bottom: 15px;
+}
+h1{
+    font-size: 24px;
+    color: #0F1111;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+$br:8px;
+$ct:12px;
+$mt:14px;
+$at:13px;
+$atc:#B12704;
+$colorbord:rgb(202, 108, 1);
+$brc:rgba(121, 121, 121, 0.884);
+%tplborder{
+    border: 1px solid $brc;
+    border-radius: $br;
+    padding: 10px;
+}
+
+%font_one{
+    font-size: 14px;
+    color: #565959;
+}
+
+%first_a{
+    &:hover{
+        color: $atc;
+        text-decoration: underline;
+    }
+    @extend %alink;
+    color: #007185;
+    display: inline-block;
+}
+
+
+%Line {
+    border-bottom: 1px solid $brc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+%button{
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+}
+%alink{
+    text-decoration: none;
+    display: block;
+}
+%bsh{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.body{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    width: 1465px;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 23%;
+    flex-wrap: wrap;
+    text-align: center;
+
+    p{
+        @extend %font_one;
+    }
+
+    picture{
+        &:first-child{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    p{
+        margin: 10px auto;
+        font-size: $mt;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        picture{
+            width: 24%;
+            padding: 0;
+            &:hover{
+                box-sizing: border-box;
+                box-shadow: 0 3px 10px rgb(74, 172, 218);
+                outline: 7px solid rgb(255, 255, 255);
+                outline-offset: -7px;
+                border-top: 2px solid rgb(30, 43, 161);
+                border-bottom: 2px solid rgb(30, 43, 161);
+                border-left: 2px solid rgb(30, 43, 161);
+                border-right: 2px solid rgb(30, 43, 161);
+            }
+            img{
+                width: 100%;
+                margin: 0;
+                padding: 0px;
+                box-sizing: border-box;
+                border: 1px solid rgb(0, 0, 0);
+                border-radius: 3px;
+            }
+        }
+    }
+
+    .li-mark-1{
+        margin-left: 20px;
+    }
+   
+}
+
+// basic_information
+.basic_information {
+    width: 57%;
+    display: flex;
+    right: 23%;
+    flex-wrap: wrap;
+    margin-left: 31%;
+    .section_1{
+        width: 100%;
+        .first-a{
+            @extend %first_a;
+        }
+        span{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .star_block{    
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 10px;
+            #selecttheme{
+                border: none;
+                width: 20px;
+            }
+
+        }
+        .emblem{
+            margin-top: 10px;
+            span{
+                margin: 0;
+                &:first-child {
+                    background-color:#232F3E;
+                    color: #fff;
+                    padding: 5px;
+                }
+                &:nth-child(2) {
+                    background-color: #232F3E;
+                    color: $colorbord;
+                    padding: 5px;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        border: 13px solid transparent;
+                        border-left: 13px solid #232F3E;
+                        border-top: 13px solid #232F3E;
+                        top: 0px;
+                        right: -26px;
+                       }
+                }
+                &:last-child{
+                    padding-left: 30px; 
+                }
+            }
+        }
+        .wings_symbol {
+            margin-top: 20px;
+            @extend %alink;
+            picture {
+                img {
+                    width: 20px;
+                }
+            }
+            span{
+                color:  #168342;
+            }
+        }
+    
+        .Line{
+            @extend %Line;
+        }
+    }
+        
+    .section_2{
+        width: 100%;
+        div {
+            display: flex;
+            .button_type_one {
+                @extend %button;
+                opacity: 0.33;
+                border: 1px dashed rgb(0, 0, 0);
+                &:hover{
+                    color: rgb(0, 0, 0);
+                    opacity: 1;
+                    border: 1px dashed rgb(0, 0, 0, 0.33);
+                }
+            }
+
+            .button_type_two{
+                @extend %button;
+                border: 1px solid $colorbord;
+                background-color: #fefcf8; 
+            }
+
+            .button_type_tree {
+                border: 1px solid rgb(0, 0, 0);
+                @extend %button;
+                &:hover{
+                    background-color: rgba(212, 212, 212, 0.89)
+                }
+
+            }
+        }
+        table{
+            margin-left: -15px;
+            border-spacing: 15px;
+        }
+        .first-a{
+            @extend %first_a;
+        }
+        .Line{
+            @extend %Line;
+        }
+    }   
+    
+    .section_3{
+        width: 100%;
+        ul {
+            margin-left: 20px;
+        }
+        .first-a{
+            @extend %first_a;
+        }
+    }
+
+    .section_4 {
+        .first-a{
+            @extend %first_a;
+            span{
+                color: $atc;
+            }
+        }
+        .Line{
+            @extend %Line;
+        }
+
+        div {
+            display: flex;
+
+            img {
+                width: 200px;
+            }
+            .keyboard {
+                display: block;
+                margin-left: 20px;
+                p {
+                    color: $atc;
+                }
+                div {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 10px;
+                    img {
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        
+        p {
+            margin-top: 10px;
+        }
+    }
+    
+}
+
+
+
+// aside
+aside{
+    width: 20%;
+    text-align: center;
+     
+    .section{
+        @extend %tplborder;
+        width: 100%;
+        
+        .Location {
+            display: flex;
+            &:hover{
+                color: $atc;
+            }
+            text-decoration: none;
+            color: #639197;
+            picture{
+                img{
+                    width: 15px;
+                    height: 15px;
+                    }
+            }
+            p{
+                font-size:$ct;
+                padding-left: 10px;
+            }
+        }
+
+        .More{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            @extend %tplborder;
+            padding: 10px 70px;
+            margin: auto;
+            background-color: #fff;
+            font-size: $at;
+            &:hover{
+                background-color: rgba(212, 212, 212, 0.89);
+            }
+            display: block;
+            @extend %bsh;
+        }
+
+        .Line{
+            @extend %Line;
+        }
+
+        .More-add{
+            background-color: #eff0f4;
+            margin: auto;
+            padding: 10px 10px 10px 10px;
+            margin-top:10px;
+            text-align: left;
+        }
+    }
+
+
+    .Sell{
+        margin-bottom: 50px;
+        p{
+            margin: 50px auto 15px auto;
+            font-size: $ct;
+        }
+        a{
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            @extend %tplborder;
+            @extend %bsh;
+            font-size: $at;
+            &:hover{
+                background-color: rgba(212, 212, 212, 0.89);
+            }
+        }
+    }
+
+    .aside_img {
+
+        a{
+            display: block;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            @extend %tplborder;
+            border-radius: 0;
+            width: 100%;
+            picture{
+                img {
+                    width: 250px;
+                }
+            }
+            p{
+                text-align: left;
+            }
+            div {
+                display: flex;
+            }
+        }
+    }
+}
+
+
+
+
+
+
